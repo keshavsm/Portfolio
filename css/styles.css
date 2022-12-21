@@ -3191,6 +3191,12 @@ input[type=button].btn-block {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 .zoom {
   padding:5px;
   background-color: grey;
@@ -3201,7 +3207,7 @@ input[type=button].btn-block {
 .zoom:hover {
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(4); 
 }
 
 .dropdown-header {
