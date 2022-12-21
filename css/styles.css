@@ -3168,17 +3168,40 @@ input[type=button].btn-block {
   display: block;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .zoom {
-  padding: 2px;
+  padding:5px;
   background-color: grey;
-  transition: transform .4s; /* Animation */
-  width: 40px;
-  height: 40px;
+  transition: transform .4s;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 
 .dropdown-header {
